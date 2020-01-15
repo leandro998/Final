@@ -11,7 +11,7 @@
     <section id="home">
         <ul id="menu">
             <a href="#home"><li>Home</li></a>
-            <a href="#first"><li>What is your name?</li></a>
+            <a href="#first" onclick="getName();"><li>What is your name?</li></a>
             <a href="#second"><li>Converting temperature</li></a>
             <a href="#third"><li>What is your age?</li></a>
             <a href="#fourth"><li>Sum of numbers</li></a>
@@ -21,19 +21,57 @@
     </section>
     
     <section id="first">
-        <h1 id="output"></h1>
-        <p>What is your name?<input type="text" id="name"></p>
-        <button onclick="getName();">Type your name</button>
+        <h1 id="output"></h1><br>
+        <h1>welcome to our project</h1>
+        
         <script>
             function getName(){
-                let theName =  document.getElementById("name").value;
-                document.getElementById("output").innerHTML = "Welcome " + theName + " choose the menu for more information"
+                let theName =  prompt("What is your name?");
+                document.getElementById("output").innerHTML = "Hello " + theName + ","
             }
         </script>
     </section>
 
-    <section id="second"></section>
-    <section id="third"></section>
+    <section id="second">
+        <h1>Temperature converter</h1><br>
+        <h3>Temperature: <input id="temp" type="number"></h3>
+        <br><br>
+        <button type="button" onclick="celsius();">Convert to Celsius</button>
+        <button type="button" onclick="fahrenheit();">Convert to Fahrenheit</button>
+        <br><br>
+        <h4 id="secondoutput"></h4>
+        
+        <script>
+        function celsius() {
+            let theNumber = document.getElementById("temp").value
+            document.getElementById('secondoutput').innerHTML = theNumber + "º Fahrenheits = " + ((theNumber -32) * 5/9) + "º Celsius";
+        }
+        function fahrenheit() {
+            let theNumber = document.getElementById("temp").value
+            document.getElementById('secondoutput').innerHTML = theNumber + "º Celsius = " + ((theNumber * 9/5) + 32) + "º Fahrenheits";
+        }
+        </script>
+
+    </section>
+    <section id="third">
+        <h1 id="thirdoutput"></h1>
+        <button onclick = "age();">What's your age?</button>
+        <script>
+            function age() {
+                let theAge =  Number(prompt("What is your age?"));
+                if(theAge <= 20) {
+                    document.getElementById('thirdoutput').innerHTML = "You need to study hard";
+                } else if (theAge <= 30){
+                    document.getElementById('thirdoutput').innerHTML = "Get Married";
+                } else if (theAge <= 40){
+                    document.getElementById('thirdoutput').innerHTML = "Make a lot of money";
+                } else if (theAge <= 50) {
+                    document.getElementById('thirdoutput').innerHTML = "Be successful"
+                } else {document.getElementById('thirdoutput').innerHTML = "Travel a lot"}
+            }
+            
+            </script>
+    </section>
     <section id="fourth"></section>
     <section id="fith"></section>
     <section id="sixth"></section>

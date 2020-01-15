@@ -45,12 +45,56 @@
     height: 100vh;
     background: url(../image/bckg1.jpg) center center fixed no-repeat;
     background-size: cover;
+    padding-top: 100px;
+    padding-left: 20px;
 }
 
 #second {
     width: 100vw;
     height: 100vh;
-    background: url(../image/bckg1.jpg) center center fixed no-repeat;
+    background: url(../image/bckg2.jpg) center center fixed no-repeat;
     background-size: cover;
+    color: black;
+    padding-top: 100px;
+    padding-left: 20px;
 }
 
+#third {
+    width: 100vw;
+    height: 100vh;
+    background: url(../image/bckg3.jpg) center center fixed no-repeat;
+    background-size: cover;
+    color: black;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+#fourth {
+    width: 100vw;
+    height: 100vh;
+    background: url(../image/bckg4.jpg) center center fixed no-repeat;
+    background-size: cover;
+    color: black;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+#fith {
+    width: 100vw;
+    height: 100vh;
+    background: url(../image/bckg5.jpg) center center fixed no-repeat;
+    background-size: cover;
+    color: black;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+#sixth {
+    width: 100vw;
+    height: 100vh;
+    background: url(../image/bckg6.jpg) center center fixed no-repeat;
+    background-size: cover;
+    color: black;
+    padding-top: 100px;
+    padding-left: 20px;
+}
