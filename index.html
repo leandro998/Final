@@ -13,7 +13,7 @@
             <a href="#home"><li>Home</li></a>
             <a href="#first" onclick="getName();"><li>What is your name?</li></a>
             <a href="#second"><li>Converting temperature</li></a>
-            <a href="#third"><li>What is your age?</li></a>
+            <a href="#third" onclick="age();"><li>What is your age?</li></a>
             <a href="#fourth"><li>Sum of numbers</li></a>
             <a href="#fith"><li>Prime numbers</li></a>
             <a href="#sixth"><li>Fibonacci numbers</li></a>
@@ -55,7 +55,6 @@
     </section>
     <section id="third">
         <h1 id="thirdoutput"></h1>
-        <button onclick = "age();">What's your age?</button>
         <script>
             function age() {
                 let theAge =  Number(prompt("What is your age?"));
