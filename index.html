@@ -72,10 +72,16 @@
             </script>
     </section>
     <section id="fourth">
-        <h1 id="fourth_output"></h1>
-        <p><input type="number" id="first_number" placeholder=" First number here "></p>
-        <p><input type="number" id="second_number" placeholder=" Second number here "></p>
-        <button onclick="getIncludingNumber();">Get the answer</button>
+     <div class="fourth_container">
+          <div class="fourth_answer_item">
+             <h1 id="fourth_output"></h1>
+          </div>
+              <div class="fourth_inputNumber_item">
+                  <p><input type="fourth_number" id="first_number" placeholder=" First number here "></p>
+                  <p><input type="fourth_number" id="second_number" placeholder=" Second number here "></p>
+                  <button onclick="getIncludingNumber();" type="fourth_button">Get the answer</button>
+              </div>
+     </div>
         <script>
         function getIncludingNumber() {
             let theFirstNumber = parseInt(document.getElementById('first_number').value);
@@ -85,10 +91,8 @@
                 sum = sum + i;
             }
             document.getElementById('fourth_output').innerHTML = "answer is " + sum;
-
-
         }
-    </script>
+        </script>
     </section>
     <section id="fith">
         <h1 id="fifth_output"></h1>

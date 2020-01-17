@@ -70,16 +70,53 @@ html, body {
     padding-top: 100px;
     padding-left: 20px;
 }
-
+/* fourth part is here */
 #fourth {
     width: 100vw;
     height: 100vh;
     background: url(../image/bckg4.jpg) center center fixed no-repeat;
     background-size: cover;
-    color: black;
+    color:white;
     padding-top: 100px;
     padding-left: 20px;
+}    
+.fourth_container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 35px;
 }
+.fourth_answer_item{
+    font-size: 80px;
+    margin-top: 30px;
+}
+input[type=fourth_number], select {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+}
+button[type=fourth_button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 40px;
+}
+button[type=fourth_button]:hover {
+    background-color: #45a049;
+}
+
+/* fourth part is end */
 
 #fith {
     width: 100vw;
@@ -99,4 +136,47 @@ html, body {
     color: black;
     padding-top: 100px;
     padding-left: 20px;
+}
+/* Fourth Responsible 1024px */
+@media (max-width: 1024px) {
+    .fourth_answer_item{
+        font-size: 40px;
+    }
+    input[type=fourth_number], select {
+        font-size: 30px;
+    }
+    button[type=fourth_button] { 
+        font-size: 30px;}
+}
+
+/* Fourth Responsible 700px */
+@media (max-width: 700px) {
+    .fourth_answer_item{
+        font-size: 40px;
+    }
+    .input[type=fourth_number], select {
+        border-radius: 30px;
+        font-size: 50px;
+        text-align: center;
+}
+}
+
+/* Fourth Responsible 375px */
+@media (max-width: 375px) {
+    .fourth_answer_item{
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    input[type=fourth_number], select {
+        width: 100px;
+        border-radius: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    button[type=fourth_button] { 
+        width: 100px;
+        color: white;
+        border-radius: 60px;
+        font-size: 20px;
+    }
 }
