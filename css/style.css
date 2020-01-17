@@ -1,12 +1,12 @@
 * {
     margin: 0px;
-    color: white;
+    
 }
 
 
-/* html, body {
+html, body {
     scroll-behavior: smooth;
-} */
+}
 
 #home {
     width: 100vw;
@@ -38,6 +38,7 @@
     display: inline-block ;
     margin:0 auto;
     z-index: 1;
+    color: white;
 }
 
 #first {
@@ -45,6 +46,7 @@
     height: 100vh;
     background: url(../image/bckg1.jpg) center center fixed no-repeat;
     background-size: cover;
+    color: white;
     padding-top: 100px;
     padding-left: 20px;
 }

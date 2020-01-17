@@ -71,9 +71,75 @@
             
             </script>
     </section>
-    <section id="fourth"></section>
-    <section id="fith"></section>
-    <section id="sixth"></section>
+    <section id="fourth">
+        <h1 id="fourth_output"></h1>
+        <p><input type="number" id="first_number" placeholder=" First number here "></p>
+        <p><input type="number" id="second_number" placeholder=" Second number here "></p>
+        <button onclick="getIncludingNumber();">Get the answer</button>
+        <script>
+        function getIncludingNumber() {
+            let theFirstNumber = parseInt(document.getElementById('first_number').value);
+            let theSecondNumber = parseInt(document.getElementById('second_number').value);
+            let sum = 0;
+            for (let i = theFirstNumber; i <= theSecondNumber; i++) {
+                sum = sum + i;
+            }
+            document.getElementById('fourth_output').innerHTML = "answer is " + sum;
+
+
+        }
+    </script>
+    </section>
+    <section id="fith">
+        <h1 id="fifth_output"></h1>
+        <p><input type="text" id="prime_number" placeholder=" prime number here "></p>
+        <button onclick="getPrimeNumber();"> Primenumber or not</button>
+        <script>
+            function getPrimeNumber() {
+                let primeNumber = parseInt(document.getElementById('prime_number').value);
+                if (primeNumber === 1) {
+                    document.write(primeNumber + " is not Prime number");
+                } else if (primeNumber === 2) {
+                    document.getElementById('fifth_output').innerHTML = primeNumber + " is Prime number";
+                } else {
+                    for (let i = 2; i < primeNumber; i++) {
+                        if (primeNumber % i === 0) {
+                            return document.getElementById('fifth_output').innerHTML = primeNumber + " is not Prime number";
+
+                        }
+                    }
+                    return document.getElementById('fifth_output').innerHTML = primeNumber + " is Prime number";
+                }
+            }
+
+            </script>
+    </section>
+    <section id="sixth">
+        <h1 id="sixth_output"></h1>
+        <p><input type="text" id="fibonacci_number" placeholder=" Fibonacci number here "></p>
+        <button onclick="fibonacci_series();"> Fibonacci number here</button>
+        <script>
+
+            let fibonacci_series = () => {
+                let n = parseInt(document.getElementById('fibonacci_number').value);
+
+                let f1=0;
+                let f2=1;
+                let f3=1;
+                let result =[0,1];
+                for(i=0;i<n ;i++){
+                    f3 = f1 +f2;
+                    f1 =f2;
+                    f2 = f3;
+                    result.push(f3);
+
+                }
+
+                document.getElementById('sixth_output').innerHTML = result.toString();
+                
+            };
+        </script>
+    </section>
 
 </body>
 </html>
