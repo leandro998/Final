@@ -1,2 +1,0 @@
-# Final
-First Final Exam
