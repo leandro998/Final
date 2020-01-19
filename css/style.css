@@ -193,7 +193,7 @@ vertical-align: auto;
 text-align: center;
 height: 10vh;
 width: 30vw;
-margin-left: 40vw;
+margin-left: 25vw;
 border-radius: 10px;
 font-size: 1em;
 }
@@ -201,7 +201,7 @@ font-size: 1em;
 #buttonprimenumber {
 height: 20vh;
 width: 30vw;
-margin-left: 40vw;
+margin-left: 25vw;
 border-radius: 10px;
 border-color: rgb(120, 197, 248, 0.432);
 background-color: rgba(120, 197, 248, 0.432);
