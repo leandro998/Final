@@ -167,6 +167,52 @@ button[type=fourth_button]:hover {
     background-color: #45a049;
 }
 
+/* Fourth Responsible 1024px */
+@media (max-width: 1024px) {
+    .fourth_answer_item{
+        font-size: 40px;
+    }
+    input[type=fourth_number], select {
+        font-size: 30px;
+    }
+    button[type=fourth_button] { 
+        font-size: 30px;}
+}
+
+/* Fourth Responsible 700px */
+@media (max-width: 700px) {
+    .fourth_answer_item{
+        font-size: 40px;
+    }
+    .input[type=fourth_number], select {
+        border-radius: 30px;
+        font-size: 50px;
+        text-align: center;
+}
+}
+
+/* Fourth Responsible 375px */
+@media (max-width: 375px) {
+    .fourth_answer_item{
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    input[type=fourth_number], select {
+        width: 100px;
+        border-radius: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    button[type=fourth_button] { 
+        width: 100px;
+        color: white;
+        border-radius: 60px;
+        font-size: 20px;
+        align-content: center;
+    
+    }
+}
+
 /* Fith part  */
 
 #fith {
