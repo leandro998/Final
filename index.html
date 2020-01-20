@@ -8,159 +8,207 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="home">
+<section id="home">
+    <div id="home-wrapper">
         <ul id="menu">
-            <a href="#home"><li>Home</li></a>
-            <a href="#first" onclick="getName();"><li>What is your name?</li></a>
-            <a href="#second"><li>Converting temperature</li></a>
-            <a href="#third" onclick="age();"><li>What is your age?</li></a>
-            <a href="#fourth"><li>Sum of numbers</li></a>
-            <a href="#fith"><li>Prime numbers</li></a>
-            <a href="#sixth"><li>Fibonacci</li></a>
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#first" onclick="getName();">
+                <li>What is your name?</li>
+            </a>
+            <a href="#second">
+                <li>Converting temperature</li>
+            </a>
+            <a href="#third" onclick="age();">
+                <li>What is your age?</li>
+            </a>
+            <a href="#fourth">
+                <li>Sum of numbers</li>
+            </a>
+            <a href="#fith">
+                <li>Prime numbers</li>
+            </a>
+            <a href="#sixth">
+                <li>Fibonacci</li>
+            </a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </ul>
-    </section>
-    
-    <section id="about">
-        <h4>Our Team</h4>
-        <p>Hiroaki</p>
-        <p>Leandro</p>
-        <p>Melisa</p>
-        <p>Yusuke</p>
-    </section>
+        <ul id="menu1" >
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#first" onclick="getName();">
+                <li>Sec1</li>
+            </a>
+            <a href="#second">
+                <li>Sec2</li>
+            </a>
+            <a href="#third" onclick="age();">
+                <li>Sec3</li>
+            </a>
+            <a href="#fourth">
+                <li>Sec4</li>
+            </a>
+            <a href="#fith">
+                <li>Sec5</li>
+            </a>
+            <a href="#sixth">
+                <li>Sec6</li>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </ul>
+        <div id="Team-name">
+            <h1 class="Jesus">Jesus</h1>
+        </div>
+        <div id="about">
+            <h2>Our Team</h2>
+            <p>Hiroaki</p>
+            <p>Leandro</p>
+            <p>Melisa</p>
+            <p>Yusuke</p>
+        </div>
+    </div>
+</section>
 
-    <section id="first">
-        <h1 id="output"></h1>
-        <h1>welcome to our project</h1>
-        
-        <script>
-            function getName(){
-                let theName =  prompt("What is your name?");
-                document.getElementById("output").innerHTML = "Hello " + theName + ","
-            }
-        </script>
-    </section>
 
-    <section id="second">
-        <h1>Temperature converter</h1><br>
-        <h3>Temperature: <input id="temp" type="number"></h3>
-        <br><br>
-        <button type="button" id="secondbtn1" onclick="celsius();">Convert to Celsius</button>
-        <button type="button" id="secondbtn2" onclick="fahrenheit();">Convert to Fahrenheit</button>
-        <br><br>
-        <h4 id="secondoutput"></h4>
-        
-        <script>
+<section id="first">
+    <h1 id="output"></h1>
+    <h1>welcome to our project</h1>
+
+    <script>
+        function getName() {
+            let theName = prompt("What is your name?");
+            document.getElementById("output").innerHTML = "Hello " + theName + ","
+        }
+    </script>
+</section>
+
+<section id="second">
+    <h1>Temperature converter</h1><br>
+    <h3>Temperature: <input id="temp" type="number"></h3>
+    <br><br>
+    <button type="button" id="secondbtn1" onclick="celsius();">Convert to Celsius</button>
+    <button type="button" id="secondbtn2" onclick="fahrenheit();">Convert to Fahrenheit</button>
+    <br><br>
+    <h4 id="secondoutput"></h4>
+
+    <script>
         function celsius() {
             let theNumber = document.getElementById("temp").value
-            document.getElementById('secondoutput').innerHTML = theNumber + "º Fahrenheits = " + ((theNumber -32) * 5/9) + "º Celsius";
+            document.getElementById('secondoutput').innerHTML = theNumber + "º Fahrenheits = " + ((theNumber - 32) * 5 / 9) + "º Celsius";
         }
+
         function fahrenheit() {
             let theNumber = document.getElementById("temp").value
-            document.getElementById('secondoutput').innerHTML = theNumber + "º Celsius = " + ((theNumber * 9/5) + 32) + "º Fahrenheits";
+            document.getElementById('secondoutput').innerHTML = theNumber + "º Celsius = " + ((theNumber * 9 / 5) + 32) + "º Fahrenheits";
         }
-        </script>
+    </script>
 
-    </section>
-    <section id="third">
-        <h1 id="thirdoutput"></h1>
-        <script>
-            function age() {
-                let theAge =  Number(prompt("What is your age?"));
-                if(theAge <= 20) {
-                    document.getElementById('thirdoutput').innerHTML = "You need to study hard";
-                } else if (theAge <= 30){
-                    document.getElementById('thirdoutput').innerHTML = "Get Married";
-                } else if (theAge <= 40){
-                    document.getElementById('thirdoutput').innerHTML = "Make a lot of money";
-                } else if (theAge <= 50) {
-                    document.getElementById('thirdoutput').innerHTML = "Be successful"
-                } else {document.getElementById('thirdoutput').innerHTML = "Travel a lot"}
+</section>
+<section id="third">
+    <h1 id="thirdoutput"></h1>
+    <script>
+        function age() {
+            let theAge = Number(prompt("What is your age?"));
+            if (theAge <= 20) {
+                document.getElementById('thirdoutput').innerHTML = "You need to study hard";
+            } else if (theAge <= 30) {
+                document.getElementById('thirdoutput').innerHTML = "Get Married";
+            } else if (theAge <= 40) {
+                document.getElementById('thirdoutput').innerHTML = "Make a lot of money";
+            } else if (theAge <= 50) {
+                document.getElementById('thirdoutput').innerHTML = "Be successful"
+            } else {
+                document.getElementById('thirdoutput').innerHTML = "Travel a lot"
             }
-            
-            </script>
-    </section>
-    <section id="fourth">
-        <div class="fourth_container">
-            <div class="fourth_answer_item">
-               <h1 id="fourth_output"></h1>
-            </div>
-            <div class="fourth_inputNumber_item">
-                <p><input type="fourth_number" id="first_number" placeholder=" First number here "></p>
-                <p><input type="fourth_number" id="second_number" placeholder=" Second number here "></p>
-                <button id="fourth_button" onclick="getIncludingNumber();" type="fourth_button">Get the answer</button>
-            </div>
+        }
+
+    </script>
+</section>
+<section id="fourth">
+    <div class="fourth_container">
+        <div class="fourth_answer_item">
+            <h1 id="fourth_output"></h1>
         </div>
-        
+        <div class="fourth_inputNumber_item">
+            <p><input type="fourth_number" id="first_number" placeholder=" First number here "></p>
+            <p><input type="fourth_number" id="second_number" placeholder=" Second number here "></p>
+            <button id="fourth_button" onclick="getIncludingNumber();" type="fourth_button">Get the answer</button>
+        </div>
+    </div>
+
+    <script>
+        function getIncludingNumber() {
+            let theFirstNumber = parseInt(document.getElementById('first_number').value);
+            let theSecondNumber = parseInt(document.getElementById('second_number').value);
+            let sum = 0;
+            for (let i = theFirstNumber; i <= theSecondNumber; i++) {
+                sum = sum + i;
+            }
+            document.getElementById('fourth_output').innerHTML = "answer is " + sum;
+        }
+    </script>
+</section>
+
+<section id="fith">
+    <div id="primecontainer">
+        <h1 id="fifth_output"></h1>
+        <p><input type="text" id="prime_number" placeholder=" number here "></p>
+        <button onclick="getPrimeNumber();" id="buttonprimenumber"> Prime number or not</button>
+
         <script>
-          function getIncludingNumber() {
-              let theFirstNumber = parseInt(document.getElementById('first_number').value);
-              let theSecondNumber = parseInt(document.getElementById('second_number').value);
-              let sum = 0;
-              for (let i = theFirstNumber; i <= theSecondNumber; i++) {
-                  sum = sum + i;
-              }
-              document.getElementById('fourth_output').innerHTML = "answer is " + sum;
-          }
-        </script>
-    </section>
-
-    <section id="fith">
-        <div id="primecontainer">
-            <h1 id="fifth_output"></h1>
-            <p><input type="text" id="prime_number" placeholder=" number here "></p>
-            <button onclick="getPrimeNumber();" id="buttonprimenumber"> Prime number or not</button>
-
-            <script>
-                function getPrimeNumber() {
-                    let primeNumber = parseInt(document.getElementById('prime_number').value);
-                    if (primeNumber === 1) {
-                        document.getElementById('fifth_output').innerHTML = primeNumber + " is not Prime number";
-                    } else if (primeNumber === 2) {
-                        document.getElementById('fifth_output').innerHTML = primeNumber + " is Prime number";
-                    } else {
-                        for (let i = 2; i < primeNumber; i++) {
-                            if (primeNumber % i === 0) {
-                                return document.getElementById('fifth_output').innerHTML = primeNumber + " is not Prime number";
-                            }
+            function getPrimeNumber() {
+                let primeNumber = parseInt(document.getElementById('prime_number').value);
+                if (primeNumber === 1) {
+                    document.getElementById('fifth_output').innerHTML = primeNumber + " is not Prime number";
+                } else if (primeNumber === 2) {
+                    document.getElementById('fifth_output').innerHTML = primeNumber + " is Prime number";
+                } else {
+                    for (let i = 2; i < primeNumber; i++) {
+                        if (primeNumber % i === 0) {
+                            return document.getElementById('fifth_output').innerHTML = primeNumber + " is not Prime number";
                         }
-                        return document.getElementById('fifth_output').innerHTML = primeNumber + " is Prime number";
                     }
+                    return document.getElementById('fifth_output').innerHTML = primeNumber + " is Prime number";
                 }
-            </script>
-        </div>
-    </section>
-    
-    <section id="sixth">
-        <div class="sixth_container">
-            <div><input type="number" id="fibonacci_number" placeholder=" Fibonacci number here "></div>
-            <button onclick="fibonacci_series();" id="sixbtn">  Display Fibonaccis  </button>
-            <h1 id="sixth_output"></h1>
-        </div>
-        <script>
-    
-            let fibonacci_series = () => {
-                let n = parseInt(document.getElementById('fibonacci_number').value);
-    
-                let f1 = 0;
-                let f2 = 1;
-                let f3 = 1;
-                let result = [0, 1];
-                for (i = 1; i < n; i++) {
-                    f3 = f1 + f2;
-                    f1 = f2;
-                    f2 = f3;
-                    result.push(f3);
-    
-                }
-                result.shift(result[0]);
-                document.getElementById('sixth_output').innerHTML = result.toString();
-    
-            };
+            }
         </script>
-    </section>
-    
+    </div>
+</section>
+
+<section id="sixth">
+    <div class="sixth_container">
+        <div><input type="number" id="fibonacci_number" placeholder=" Fibonacci number here "></div>
+        <button onclick="fibonacci_series();" id="sixbtn"> Display Fibonaccis</button>
+        <h1 id="sixth_output"></h1>
+    </div>
+    <script>
+
+        let fibonacci_series = () => {
+            let n = parseInt(document.getElementById('fibonacci_number').value);
+
+            let f1 = 0;
+            let f2 = 1;
+            let f3 = 1;
+            let result = [0, 1];
+            for (i = 1; i < n; i++) {
+                f3 = f1 + f2;
+                f1 = f2;
+                f2 = f3;
+                result.push(f3);
+
+            }
+            result.shift(result[0]);
+            document.getElementById('sixth_output').innerHTML = result.toString();
+
+        };
+    </script>
+</section>
+
 </body>
 </html>

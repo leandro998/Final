@@ -37,30 +37,43 @@ html, body {
 }
 #menu a, li {
     text-decoration: none;
-    margin-right: 0px;
-    margin-left: 0px;
     display: inline-block;
     margin: 0 auto;
     z-index: 1;
     color: white;
 }
+#menu1{
+    display: none;
+}
+#Team-name{
+    position: relative;
+    text-align: center;
+    padding: 200px 0 100px 0;
+}
+.Jesus{
+    font-size: 100px;
+    color: white;
+    border-top: 10px solid #e2dc1c;
+    border-bottom: 10px solid #e2dc1c;
+    display: inline-block;
+    letter-spacing: 20px;
+}
+
 
 #about{
-    width: 150px;
+    width: 250px;
     height: 150px;
-    position: absolute;
-    top: 30vh;
-    left: 10vw;
-    background-color: white;
-    color: blue;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
+    position: relative;
+    top: 50%;
+    background-color:transparent;
+    color: white;
+    padding:20px;
+    margin:0 auto;
+    font-size: 40px;
     border-radius: 25px;
     line-height: 1.5;
     text-align: center;
+
 }
 
 /* First part  */
@@ -116,7 +129,8 @@ html, body {
 }
 
 @media (max-width: 700px) {
-    #thirdoutput { height: 20vh;
+    #thirdoutput {
+        height: 20vh;
     }
 }
 
@@ -240,7 +254,7 @@ text-align: center;
 
 h1#sixth_output {
 
-    font-size: 2em;
+    font-size: 5sem;
     margin: 0 auto;
     padding: 10px;
     color: #fff;
@@ -274,6 +288,37 @@ h1#sixth_output {
 }
 
 @media (max-width: 700px) {
+    #menu{
+        display: none;
+    }
+    #menu1{
+        display: inline;
+    }
+    #menu1 {
+        position: fixed;
+        display: flex;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: red;
+        font-size: 1.2em;
+        width: 100%;
+        height: 5vh;
+        background-color: black;
+        text-align: center;
+        font-weight: 600;
+    }
+    #menu1 a, li {
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 auto;
+        z-index: 1;
+        color: white;
+    }
+
 
 
     h1#sixth_output {
