@@ -254,7 +254,7 @@ text-align: center;
 
 h1#sixth_output {
 
-    font-size: 5sem;
+    font-size: 5em;
     margin: 0 auto;
     padding: 10px;
     color: #fff;
@@ -262,7 +262,7 @@ h1#sixth_output {
     display: flex;
     word-break: break-all;
     max-width: 90vw;
-    max-height: 2em;
+    max-height: 5em;
 }
 
 #fibonacci_number {
